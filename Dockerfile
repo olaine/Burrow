@@ -1,4 +1,4 @@
-FROM golang:alpine
+FROM golang:1.9.1
 
 MAINTAINER LinkedIn Burrow "https://github.com/linkedin/Burrow"
 
