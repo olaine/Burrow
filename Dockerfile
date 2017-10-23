@@ -12,8 +12,7 @@ ADD . $GOPATH/src/github.com/linkedin/Burrow
 RUN cd $GOPATH/src/github.com/linkedin/Burrow \
  && gpm install \
  && go install \
- && mv $GOPATH/bin/Burrow $GOPATH/bin/burrow \
- && apt-get remove --purge git curl wget
+ && mv $GOPATH/bin/Burrow $GOPATH/bin/burrow
 
 ADD docker-config /etc/burrow
 
