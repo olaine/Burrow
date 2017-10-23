@@ -2,7 +2,7 @@ FROM golang:1.9.1
 
 MAINTAINER LinkedIn Burrow "https://github.com/linkedin/Burrow"
 
-RUN apt-get update && apt-get install curl bash git ca-certificates wget \
+RUN apt-get update && apt-get install -y curl bash git ca-certificates wget \
  && update-ca-certificates \
  && curl -sSO https://raw.githubusercontent.com/pote/gpm/v1.4.0/bin/gpm \
  && chmod +x gpm \
